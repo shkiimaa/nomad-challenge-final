@@ -27,7 +27,7 @@ const quotes = [
 
 const quoteContainer = document.querySelector('#quote p');
 const author = document.querySelector('#author');
-const random = Math.floor(Math.random() * quotes.length);
+const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quoteContainer.innerHTML = `${quotes[random].quote} <figcaption></figcaption>`;
-author.innerText = quotes[random].author;
+quoteContainer.innerHTML = randomQuote.quote;
+author.innerText = randomQuote.author;
