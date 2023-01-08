@@ -9,23 +9,37 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <h1>Momentum</h1>
-    <h2 id="clock">00:00:00</h2>
-    <button id="logout" class="hidden">Logout</button>
-    <form id="formContainer" class="hidden">
-      <label for="userId"></label>
-      <input required maxlength="15" id="userId" type="text" />
-      <button>Login</button>
-      <p></p>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <blockquote id="quote">
-      <p></p>
-    </blockquote>
-    <figcaption id="author"></figcaption>
+    <div class="container">
+      <h1>Momentum</h1>
+      <h2 id="clock">00:00:00</h2>
+      <button id="logout" class="hidden">Logout</button>
+      <form id="loginForm" class="hidden">
+        <label for="userId"></label>
+        <input required maxlength="15" id="userId" type="text" />
+        <button>Login</button>
+        <p></p>
+      </form>
+      <h2 id="greeting" class="hidden"></h2>
+
+      <div>
+        <blockquote id="quote">
+          <p></p>
+        </blockquote>
+        <figcaption id="author"></figcaption>
+      </div>
+
+      <div>
+        <form id="todoForm">
+          <input required type="text" />
+          <button>enter</button>
+        </form>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
     <script src="js/background.js"></script>
   </body>
 </html>
