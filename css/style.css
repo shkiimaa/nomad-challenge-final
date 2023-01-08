@@ -14,3 +14,11 @@
   object-fit: cover;
   z-index: -1;
 }
+
+#weather,
+#todoForm,
+.qoutoContainer,
+.userContainer,
+.todoContainer {
+  margin-bottom: 20px;
+}
