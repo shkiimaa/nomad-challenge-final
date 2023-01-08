@@ -1,8 +1,9 @@
 const API_KEY = 'a409ed029f4dc038db2d0acb5a5662e2';
 
-function onGeoThen(positon) {
-  const lat = positon.latitude;
-  const lon = positon.longitude;
+function onGeoThen({ coords }) {
+  const lat = coords.latitude;
+  const lon = coords.longitude;
+  console.log(lat, lon);
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
   fetch(url).then((response) =>
